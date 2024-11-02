@@ -1,0 +1,5 @@
+ClaimID, PolicyHolderName, ClaimDate, ClaimAmount, ClaimType, Location
+1001, Alex Hagopian, 2024-11-02, 650.50, Auto, Fremont
+1002, Bob Jones, 2024-10-15, 760.53, Home, Concord
+1003, John Doe, 2024-10-32, 705.23, Auto, Manchester
+1004, Sarah Johnson, 2024-11-01, Health, Bedford
