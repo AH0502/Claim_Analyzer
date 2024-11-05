@@ -5,23 +5,33 @@ using System.IO;
 namespace claimAnalyzer
 {
 
-    public class Claim
+    public class claimAnalyzer
     {   
-        public int claimID {get; set;};
-        public string policyHolderName {get; set;};
-        public string claimDate {get; set;};
-        public decimal amount {get; set;};
-        public string claimType {get; set;};
-        public string location {get; set;};
+        private List<Dictionary<string, object>> claims = new List<Dictionary<string, object>>();
 
-        public Claim(string filePath)
+        public void LoadClaimsFromFile(string filePath)
         {
-            StreamWriter sw = new StreamWriter(filePath);
+            Dictionary<string, object> claimsData = new Dictionary<string, object>();
+
+            using (StreamReader sr = new StreamReader(filePath))
+            {
+                string line;
+                while (line = sr.ReadLine() != null)
+                {
+                    string[] parts = line.split(',');
+                    claims.Add('ClaimID', parts[0]);
+                    claims.Add('Policy Holder Name', parts[1]);
+                    claims.Add('Claim Date', parts[2]);
+                    claims.Add('Claim Amount', parts[3]);
+                    claims.Add('Claim Type', parts[4]);
+                    claims.Add('Claim Location', parts[5]);
+                }
+            }
 
         }
     }
 
-    static void main(string args[])
+    static void Mainin(string[] args)
     {
 
     }
