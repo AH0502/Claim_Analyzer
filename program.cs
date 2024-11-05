@@ -16,7 +16,7 @@ namespace claimAnalyzer
             using (StreamReader sr = new StreamReader(filePath))
             {
                 string line;
-                while (line = sr.ReadLine() != null)
+                while ((line = sr.ReadLine()) != null)
                 {
                     string[] parts = line.split(',');
                     claims.Add('ClaimID', parts[0]);
@@ -29,9 +29,16 @@ namespace claimAnalyzer
             }
 
         }
+        public void DisplayPolicyHolder()
+        {
+            foreach (var claim in claims)
+            {
+                Console.WriteLine()
+            }
+        }
     }
 
-    static void Mainin(string[] args)
+    static void Main(string[] args)
     {
 
     }
