@@ -11,7 +11,7 @@ namespace claimAnalyzer
 
         public void LoadClaimsFromFile(string filePath)
         {
-            Dictionary<string, object> claimsData = new Dictionary<string, object>();
+            
 
             using (StreamReader sr = new StreamReader(filePath))
             {
@@ -19,21 +19,29 @@ namespace claimAnalyzer
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] parts = line.split(',');
-                    claims.Add('ClaimID', parts[0]);
-                    claims.Add('Policy Holder Name', parts[1]);
-                    claims.Add('Claim Date', parts[2]);
-                    claims.Add('Claim Amount', parts[3]);
-                    claims.Add('Claim Type', parts[4]);
-                    claims.Add('Claim Location', parts[5]);
+                    Dictionary<string, object> claimsData = new Dictionary<string, object>
+                    {
+                        {'ClaimID', parts[0]},
+                        {'Policy Holder Name', parts[1]},
+                        {'Claim Date', parts[2]},
+                        {'Claim Amount', parts[3]},
+                        {'Claim Type', parts[4]},
+                        {'Claim Location', parts[5]}
+                    }
                 }
-            }
+                claims.Add(claimsData);
 
         }
-        public void DisplayPolicyHolder()
+        public void DisplayInfo()
         {
             foreach (var claim in claims)
             {
-                Console.WriteLine()
+                Console.WriteLine($"Policy Holder: {claim["Policy Holder Name"]}, "+
+                                  $"ClaimID: {claim["ClaimID"]}, " + 
+                                  $"Date: {claim["Claim Date"]}, " +
+                                  $"Amount: {claim["Claim Amount"]}, " + 
+                                  $"Type: {claim["Claim Type"]}, " + 
+                                  $"Location: {Claim["Claim Location"]}"); 
             }
         }
     }
