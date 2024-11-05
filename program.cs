@@ -13,9 +13,16 @@ namespace claimAnalyzer
         public decimal amount {get; set;};
         public string claimType {get; set;};
         public string location {get; set;};
+
+        public Claim(string filePath)
+        {
+            StreamWriter sw = new StreamWriter(filePath);
+
+        }
     }
+
     static void main(string args[])
     {
-        
+
     }
 }
