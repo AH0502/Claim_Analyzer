@@ -69,7 +69,6 @@ namespace ClaimAnalyzerApp
          {
             ClaimAnalyzer analyzer = new ClaimAnalyzer();
 
-            string filePath = "/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/claims.txt";
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1. Display Claims");
             Console.WriteLine("2. Calculate Average Claim Amount");
