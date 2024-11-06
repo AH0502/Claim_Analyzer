@@ -39,12 +39,12 @@ namespace ClaimAnalyzerApp
         {
             foreach (var claim in claims)
             {
-                Console.WriteLine($"Policy Holder: {claim["Policy Holder Name"]}, "+
-                                  $"ClaimID: {claim["ClaimID"]}, " + 
-                                  $"Date: {claim["Claim Date"]}, " +
-                                  $"Amount: {claim["Claim Amount"]}, " + 
-                                  $"Type: {claim["Claim Type"]}, " + 
-                                  $"Location: {claim["Claim Location"]}"); 
+                Console.WriteLine($"Policy Holder:{claim["Policy Holder Name"]}, "+
+                                  $"ClaimID:{claim["ClaimID"]}, " + 
+                                  $"Date:{claim["Claim Date"]}, " +
+                                  $"Amount:{claim["Claim Amount"]}, " + 
+                                  $"Type:{claim["Claim Type"]}, " + 
+                                  $"Location:{claim["Claim Location"]}"); 
             }
         }
     
