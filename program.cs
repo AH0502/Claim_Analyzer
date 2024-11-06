@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace claimAnalyzer
+namespace ClaimAnalyzer
 {
 
-    public class claimAnalyzer
+    public class ClaimAnalyzer
     {   
         private List<Dictionary<string, object>> claims = new List<Dictionary<string, object>>();
 
@@ -18,18 +18,21 @@ namespace claimAnalyzer
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] parts = line.split(',');
+                    string[] parts = line.Split(',');
                     Dictionary<string, object> claimsData = new Dictionary<string, object>
                     {
-                        {'ClaimID', parts[0]},
-                        {'Policy Holder Name', parts[1]},
-                        {'Claim Date', parts[2]},
-                        {'Claim Amount', parts[3]},
-                        {'Claim Type', parts[4]},
-                        {'Claim Location', parts[5]}
-                    }
+                        {"ClaimID", parts[0]},
+                        {"Policy Holder Name", parts[1]},
+                        {"Claim Date", parts[2]},
+                        {"Claim Amount", parts[3]},
+                        {"Claim Type", parts[4]},
+                        {"Claim Location", parts[5]}
+                    };
+
+                    claims.Add(claimsData);
                 }
-                claims.Add(claimsData);
+            }
+               
 
         }
         public void DisplayInfo()
@@ -41,13 +44,24 @@ namespace claimAnalyzer
                                   $"Date: {claim["Claim Date"]}, " +
                                   $"Amount: {claim["Claim Amount"]}, " + 
                                   $"Type: {claim["Claim Type"]}, " + 
-                                  $"Location: {Claim["Claim Location"]}"); 
+                                  $"Location: {claim["Claim Location"]}"); 
             }
         }
     }
-
-    static void Main(string[] args)
-    {
-
     }
 }
+    public class Program
+    {
+         static void Main(string[] args)
+         {
+            ClaimAnalyzer analyzer = new ClaimAnalyzer();
+
+            string filePath = "/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/claims.txt";
+
+            analyzer.LoadClaimsFromFile(filePath);
+            analyzer.DisplayInfo();
+         }
+    }
+
+    
+
