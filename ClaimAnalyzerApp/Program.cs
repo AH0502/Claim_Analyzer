@@ -85,12 +85,18 @@ namespace ClaimAnalyzerApp
                 analyzer.LoadClaimsFromFile(FilePath);
                 analyzer.DisplayInfo();
                 break;
+
                 case "2":
+                Console.WriteLine("Enter file path: ");
+                string FilePath = Console.ReadLine();
+                analyzer.LoadClaimsFromFile(FilePath);
                 analyzer.CalculateAvg();
                 break;
+
                 case "3":
                 Console.WriteLine("Exiting program...");
                 return;
+
                 default:
                 Console.WriteLine("Invalid Option");
                 break;
