@@ -1,0 +1,15 @@
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.AssemblyInfoInputs.cache
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.AssemblyInfo.cs
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.csproj.CoreCompileInputs.cache
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.sourcelink.json
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/bin/Debug/net8.0/ClaimAnalyzerApp
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/bin/Debug/net8.0/ClaimAnalyzerApp.deps.json
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/bin/Debug/net8.0/ClaimAnalyzerApp.runtimeconfig.json
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/bin/Debug/net8.0/ClaimAnalyzerApp.dll
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/bin/Debug/net8.0/ClaimAnalyzerApp.pdb
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.dll
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/refint/ClaimAnalyzerApp.dll
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.pdb
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ClaimAnalyzerApp.genruntimeconfig.cache
+/Users/alexanderhagopian/Documents/repos/Claim_Analyzer/ClaimAnalyzerApp/obj/Debug/net8.0/ref/ClaimAnalyzerApp.dll
