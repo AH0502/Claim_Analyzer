@@ -73,7 +73,7 @@ namespace ClaimAnalyzerApp
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1. Display Claims");
             Console.WriteLine("2. Calculate Average Claim Amount");
-            Console.WriteLine("3. Exit")
+            Console.WriteLine("3. Exit");
 
             string choice = Console.ReadLine();
 
@@ -92,9 +92,6 @@ namespace ClaimAnalyzerApp
                 Console.WriteLine("Invalid Option");
                 break;
             }
-            analyzer.LoadClaimsFromFile(filePath);
-            analyzer.DisplayInfo();
-            analyzer.CalculateAvg();
          }
     }
 
