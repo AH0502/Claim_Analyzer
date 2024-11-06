@@ -80,6 +80,9 @@ namespace ClaimAnalyzerApp
             switch (choice)
             {
                 case "1":
+                Console.WriteLine("Enter file path: ");
+                string FilePath = Console.ReadLine();
+                analyzer.LoadClaimsFromFile(FilePath);
                 analyzer.DisplayInfo();
                 break;
                 case "2":
