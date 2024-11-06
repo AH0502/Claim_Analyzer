@@ -7,7 +7,7 @@ namespace ClaimAnalyzerApp
 
     public class ClaimAnalyzer
     {   
-        private List<Dictionary<string, object>> claims = new List<Dictionary<string, object>>();
+        private List<Dictionary<string, string>> claims = new List<Dictionary<string, string>>();
 
         public void LoadClaimsFromFile(string filePath)
         {
@@ -19,7 +19,7 @@ namespace ClaimAnalyzerApp
                 while ((line = sr.ReadLine()) != null)
                 {
                     string[] parts = line.Split(',');
-                    Dictionary<string, object> claimsData = new Dictionary<string, object>
+                    Dictionary<string, string> claimsData = new Dictionary<string, string>
                     {
                         {"ClaimID", parts[0]},
                         {"Policy Holder Name", parts[1]},
@@ -46,6 +46,20 @@ namespace ClaimAnalyzerApp
                                   $"Type:{claim["Claim Type"]}, " + 
                                   $"Location:{claim["Claim Location"]}"); 
             }
+        }
+        public void CalculateAvg()
+        {
+            decimal sum = 0;
+            int count = 0;
+
+            foreach (var claim in claims)
+            {
+                decimal.TryParse(claim["Claim Amount"], out decimal claimAmount);
+                sum += claimAmount;
+                count++;
+            }
+            sum = sum / count;
+            Console.WriteLine($"Average: ${sum}");
         }
     
     }
