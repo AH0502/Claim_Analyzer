@@ -68,6 +68,7 @@ namespace ClaimAnalyzerApp
          static void Main(string[] args)
          {
             ClaimAnalyzer analyzer = new ClaimAnalyzer();
+            string FilePath;
 
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1. Display Claims");
@@ -80,14 +81,14 @@ namespace ClaimAnalyzerApp
             {
                 case "1":
                 Console.WriteLine("Enter file path: ");
-                string FilePath = Console.ReadLine();
+                FilePath = Console.ReadLine();
                 analyzer.LoadClaimsFromFile(FilePath);
                 analyzer.DisplayInfo();
                 break;
 
                 case "2":
                 Console.WriteLine("Enter file path: ");
-                string FilePath = Console.ReadLine();
+                FilePath = Console.ReadLine();
                 analyzer.LoadClaimsFromFile(FilePath);
                 analyzer.CalculateAvg();
                 break;
