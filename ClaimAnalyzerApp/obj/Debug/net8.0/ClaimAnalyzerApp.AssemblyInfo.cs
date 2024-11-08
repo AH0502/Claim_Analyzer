@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClaimAnalyzerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35822c2c9c16637b4d900d4d2e2dd89bdc023314")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ea67c684ebfdeb57262d3ef6cbd2e96c05af6be")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClaimAnalyzerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClaimAnalyzerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
